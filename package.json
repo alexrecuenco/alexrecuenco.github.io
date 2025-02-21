@@ -1,6 +1,9 @@
 {
-  "name": "",
+  "name": "alexrecuenco.github.io",
+  "description": "Personal blog of Alex Recuenco",
+  "author": "Alex Recuenco",
   "type": "module",
+  "license": "See LICENSE",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
@@ -9,6 +12,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^4.0.8",
+    "@astrojs/sitemap": "^3.2.1",
     "astro": "^5.3.0"
   }
 }
