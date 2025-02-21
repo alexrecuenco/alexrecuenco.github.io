@@ -1,5 +1,11 @@
 # Astro Starter Kit: Portfolio
 
+## Github Pages
+
+[source](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+
+## Quick start
+
 ```sh
 npm create astro@latest -- --template portfolio
 ```
