@@ -69,8 +69,18 @@ const {
     }
     return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   };
-  const isDark = getThemePreference() === "dark";
-  document.documentElement.classList[isDark ? "add" : "remove"]("theme-dark");
+
+  function applyTheme() {
+    isDark = getThemePreference() === "dark";
+    document.documentElement.classList[isDark ? "add" : "remove"]("theme-dark");
+
+    localStorage.theme === "dark"
+      ? document.documentElement.classList.add("dark")
+      : document.documentElement.classList.remove("dark");
+  }
+
+  document.addEventListener("astro:after-swap", applyTheme);
+  applyTheme();
 
   if (typeof localStorage !== "undefined") {
     // Watch the document element and persist user preference when it changes.
