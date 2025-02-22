@@ -13,6 +13,8 @@ const textLinks: { label: string; href: string }[] = [
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = [
   { label: "GitHub", href: "https://github.com/alexrecuenco", icon: "github-logo" },
+  { label: "BlueSky", href: "https://bsky.app/profile/alexrecuenco.com", icon: "bluesky-logo" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/alexrecuenco/", icon: "linkedin-logo" },
 ];
 
 /** Test if a link is pointing to the current page. */
@@ -28,7 +30,7 @@ const isCurrentPage = (href: string) => {
   <div class="menu-header">
     <a href="/" class="site-title">
       <Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
-      Alex [Under CONSTRUCTION] <a href="https://astro.build/themes/details/portfolio/">Astro</a>
+      Alex [Under CONSTRUCTION]
     </a>
     <menu-button>
       <template>

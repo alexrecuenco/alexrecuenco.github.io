@@ -29,24 +29,15 @@ const projects = (await getCollection("work"))
   <div class="stack gap-20 lg:gap-48">
     <div class="wrapper stack gap-8 lg:gap-20">
       <header class="hero">
-        <Hero
-          title="Hello, my name is Alex Recuenco"
-          tagline="Under CONSTRUCTION"
-          align="start"
-        >
+        <Hero title="Hello, my name is Alex" tagline="Under CONSTRUCTION" align="start">
           <div class="roles">
             <Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-            <Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-            <Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+            <Pill><Icon icon="atom-logo" size="1.33em" /> Physicist</Pill>
+            <Pill><Icon icon="pencil-line" size="1.33em" /> Educator</Pill>
           </div>
         </Hero>
 
-        <img
-          alt="Alex Recuenco smiling in a red plaid shirt and tortoise shell glasses"
-          width="480"
-          height="620"
-          src="/assets/portrait.jpg"
-        />
+        <img alt="Alex Recuenco Portrait" width="480" height="620" src="/assets/portrait.jpg" />
       </header>
 
       <Skills />
@@ -81,17 +72,14 @@ const projects = (await getCollection("work"))
 
       <section class="section with-background bg-variant">
         <header class="section-header stack gap-2 lg:gap-4">
-          <h3>Mentions</h3>
-          <p>
-            I have been fortunate enough to receive praise for my work in several publications. Take a look below to
-            learn more.
-          </p>
+          <h3>Other section</h3>
+          <p></p>
         </header>
 
         <div class="gallery">
           <Grid variant="small">
             {
-              ["Medium", "BuzzFeed", "The Next Web", "awwwards.", "TechCrunch"].map((brand) => (
+              ["A", "B", "C", "D.", "E"].map((brand) => (
                 <li class="mention-card">
                   <p>{brand}</p>
                 </li>
