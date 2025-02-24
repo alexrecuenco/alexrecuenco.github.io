@@ -1,6 +1,6 @@
 repos: #The order matters, we want prospector to run after all the sorting was done
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
+    rev: v5.0.0
     hooks:
       # All checks
       - id: check-added-large-files
